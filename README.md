@@ -1,6 +1,6 @@
 # bitbar-plugins
 
-Some random plugins for [BitBar](https://github.com/matryer/bitbar).
+Some random plugins for [BitBar](https://github.com/matryer/bitbar). If you have homebrew, and easy way to install bitbar is `brew cask install bitbar`.
 
 ## HelpScout
 
@@ -12,7 +12,7 @@ To set it up, you need to create an "App". Just to go "your profile" > "my apps"
 # Securely store the credentials on your Mac keychain
 security add-generic-password -a $USER -s bitbar_helpscout_credentials -w "your_client_id:your_client_secret"
 
-# To install the plugin
+# Install the plugin
 open bitbar://openPlugin?src=https://raw.githubusercontent.com/dropseed/bitbar-plugins/master/helpscout.1h.py
 ```
 
@@ -26,6 +26,6 @@ Shows unsolved tickets.
 # Add your email address + created token to your Mac keychain
 security add-generic-password -a $USER -s bitbar_zendesk_credentials -w "your_email_address:your_token"
 
-# To install the plugin
+# Install the plugin
 open bitbar://openPlugin?src=https://raw.githubusercontent.com/dropseed/bitbar-plugins/master/zendesk.1h.py
 ```
