@@ -34,7 +34,10 @@ session.headers.update({"Authorization": f"Bearer {access_token}"})
 
 response = session.get("https://api.helpscout.net/v2/conversations?status=active")
 response.raise_for_status()
-conversations = response.json()["_embedded"]["conversations"]
+try:
+    conversations = response.json()["_embedded"]["conversations"]
+except KeyError:
+    conversations = []
 
 response = session.get("https://api.helpscout.net/v2/mailboxes")
 response.raise_for_status()
