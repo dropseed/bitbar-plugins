@@ -29,3 +29,12 @@ security add-generic-password -a $USER -s bitbar_zendesk_credentials -w "your_em
 # Install the plugin
 open bitbar://openPlugin?src=https://raw.githubusercontent.com/dropseed/bitbar-plugins/master/zendesk.1h.py
 ```
+
+## Time
+
+Shows UTC time in the menu bar, and a few timezones when you click on it. Makes it a little easier to translate UTC time if you spend a lot of time looking at logs and things where dates are printed in UTC.
+
+```sh
+# Install the plugin
+open bitbar://openPlugin?src=https://raw.githubusercontent.com/dropseed/bitbar-plugins/master/time.30s.sh
+```
