@@ -1,7 +1,11 @@
 #!/usr/bin/env PYTHONIOENCODING=UTF-8 /usr/local/bin/python3
 import subprocess
 
-docker_output = subprocess.check_output(["/usr/local/bin/docker", "ps"]).decode("utf-8")
+try:
+    docker_output = subprocess.check_output(["/usr/local/bin/docker", "ps"], stderr=subprocess.STDOUT).decode("utf-8")
+except subprocess.CalledProcessError:
+    print("0* up")
+    exit(0)
 
 containers = []
 
