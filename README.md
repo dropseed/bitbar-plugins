@@ -39,6 +39,15 @@ Shows UTC time in the menu bar, and a few timezones when you click on it. Makes 
 open bitbar://openPlugin?src=https://raw.githubusercontent.com/dropseed/bitbar-plugins/master/time.30s.sh
 ```
 
+## Week number
+
+Shows the current week number in the menu bar (ex. "Week 11"). That's it.
+
+```sh
+# Install the plugin
+open bitbar://openPlugin?src=https://raw.githubusercontent.com/dropseed/bitbar-plugins/master/week.6h.sh
+```
+
 ## Docker
 
 Shows the number of running docker containers and gives quick menu links to kill them.
